@@ -14,7 +14,8 @@ import com.vaadin.ui.VerticalLayout;
 public class SiteUI extends UI {
 	
 	@Autowired
-	private WelcomeController welcomeController;
+	private RestClient restClient;
+	
 	private VerticalLayout layout;
 	
 	
@@ -33,8 +34,11 @@ public class SiteUI extends UI {
 	}
 	
 	private void addHeader() {
-		Label label1 = new Label(welcomeController.returnSth());
-		layout.addComponent(label1);		
+//		Label label1 = new Label(welcomeController.returnSth());
+//		layout.addComponent(label1);		
+//		Label label2 = new Label(restClient.getSthFromServer());
+		Label label2 = new Label("restClient.getSthFromServer()");
+		layout.addComponent(label2);
 	}
 
 }

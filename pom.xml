@@ -43,11 +43,11 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>mysql</groupId> -->
+		<!-- <artifactId>mysql-connector-java</artifactId> -->
+		<!-- <version>5.1.6</version> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -65,20 +65,30 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>1.19.3</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
-		<dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>javax.ws.rs-api</artifactId>
-			<version>2.0</version>
-		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 		<groupId>org.glassfish.jersey.core</groupId> -->
+<!-- 		<artifactId>jersey-server</artifactId> -->
+<!-- 		<version>2.24</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 		<groupId>org.glassfish.jersey.containers</groupId> -->
+<!-- 		<artifactId>jersey-container-servlet</artifactId> -->
+<!-- 		<version>2.24</version> -->
+<!-- 		</dependency> -->
 
 
+
+	<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-jersey</artifactId>
+	</dependency>
+
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.springframework.boot</groupId> -->
+<!-- 		<artifactId>spring-boot-starter-tomcat</artifactId> -->
+<!-- 		<scope>provided</scope> -->
+<!-- 	</dependency> -->
 
 	</dependencies>
 
