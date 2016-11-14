@@ -1,5 +1,7 @@
 package com.drzinks;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
@@ -10,7 +12,12 @@ import com.vaadin.ui.VerticalLayout;
 @SpringUI
 @Theme("valo")
 public class SiteUI extends UI {
+	
+	@Autowired
+	private WelcomeController welcomeController;
 	private VerticalLayout layout;
+	
+	
 	@Override
 	protected void init(VaadinRequest request) {
 		setupLayout();
@@ -26,7 +33,7 @@ public class SiteUI extends UI {
 	}
 	
 	private void addHeader() {
-		Label label = new Label("from server");
+		Label label = new Label(welcomeController.returnSth());
 		layout.addComponent(label);		
 	}
 
