@@ -33,8 +33,8 @@ public class SiteUI extends UI {
 	}
 	
 	private void addHeader() {
-		Label label = new Label(welcomeController.returnSth());
-		layout.addComponent(label);		
+		Label label1 = new Label(welcomeController.returnSth());
+		layout.addComponent(label1);		
 	}
 
 }
